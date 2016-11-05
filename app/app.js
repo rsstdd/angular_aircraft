@@ -1,9 +1,10 @@
 import angular from 'angular';
 import angularMaterialize from 'angular-materialize';
+import uiBootstrap from 'angular-ui-bootstrap'
 
 import uiRouter from 'angular-ui-router';
 
-angular.module('my-app', [angularMaterialize, uiRouter]);
+angular.module('my-app', [angularMaterialize, uiRouter, uiBootstrap]);
 
   // .config(['$stateProvider', ($stateProvider) => {
   //   $stateProvider

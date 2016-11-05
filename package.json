@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "angular": "^1.5.8",
+    "angular-ui-bootstrap": "^2.2.0",
     "angular-ui-router": "^0.3.2",
     "bcrypt-as-promised": "^1.1.0",
     "body-parser": "^1.15.2",
