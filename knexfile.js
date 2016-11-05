@@ -1,7 +1,7 @@
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/bookshelf_dev'
+    connection: 'postgres://localhost/angular_aircraft'
   },
 
 
