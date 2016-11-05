@@ -1,9 +1,8 @@
 import angular from 'angular';
-import uiBootstrap from 'angular-ui-bootstrap';
-
+import angularMaterialize from 'angular-materialize';
 import uiRouter from 'angular-ui-router';
 
-angular.module('angular-aircraft', [uiRouter, uiBootstrap])
+angular.module('angular-aircraft', [angularMaterialize, uiRouter])
   .config(['$stateProvider', ($stateProvider) => {
     $stateProvider
       .state('home', {
@@ -13,5 +12,5 @@ angular.module('angular-aircraft', [uiRouter, uiBootstrap])
       .state('main', {
         url: '/',
         templateUrl: 'views/home.html'
-      }); 
+      });
   }]);

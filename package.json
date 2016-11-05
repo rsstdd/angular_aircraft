@@ -9,7 +9,7 @@
     "url": ""
   },
   "scripts": {
-    "lint": "eslint  --ignore-pattern public/js/vendor",
+    "lint": "eslint --ext .js --ignore-pattern public",
     "start": "brunch watch --server",
     "knex": "knex",
     "heroku-postbuild": "knex migrate:latest",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "angular": "^1.5.8",
+    "angular-materialize": "^0.2.1",
     "angular-ui-bootstrap": "^2.2.0",
     "angular-ui-router": "^0.3.2",
     "bcrypt-as-promised": "^1.1.0",
