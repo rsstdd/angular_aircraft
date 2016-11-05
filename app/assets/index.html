@@ -3,12 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello world</title>
+    <title></title>
     <link rel="stylesheet" href="/vendor.css">
     <link rel="stylesheet" href="/app.css">
   </head>
   <body>
-    <h1>Hello World</h1>
+
+    <header ng-include="'./views/nav.html'"></header>
+
+    <main class="container">
+      <div ui-view>
+      </div>
+    </main>
+
+    <footer ng-include="'./views/footer.html'"></footer>
 
     <script src="/vendor.js"></script>
     <script src="/app.js"></script>

@@ -9,14 +9,15 @@
     "url": ""
   },
   "scripts": {
-    "lint": "eslint --ext .js --ignore-pattern public",
-    "start": "brunch watch --server",    "knex": "knex",
-    "heroku-postbuild": "knex migrate:latest",
     "lint": "eslint  --ignore-pattern public/js/vendor",
+    "start": "brunch watch --server",
+    "knex": "knex",
+    "heroku-postbuild": "knex migrate:latest",
     "nf": "nf start"
   },
   "dependencies": {
     "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
     "bcrypt-as-promised": "^1.1.0",
     "body-parser": "^1.15.2",
     "boom": "^4.2.0",
