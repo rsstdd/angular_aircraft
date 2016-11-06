@@ -40,3 +40,4 @@ jspm_packages
 .eslint
 node_modules
 .env
+public

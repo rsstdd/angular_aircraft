@@ -149,12 +149,16 @@ var __makeRelativeRequire = function(require, mappings, pref) {
     return require(name);
   }
 };
-require.register("styles/app.js", function(exports, require, module) {
+require.register("app.js", function(exports, require, module) {
 'use strict';
 
 var _angular = require('angular');
 
 var _angular2 = _interopRequireDefault(_angular);
+
+var _angularMaterialize = require('angular-materialize');
+
+var _angularMaterialize2 = _interopRequireDefault(_angularMaterialize);
 
 var _angularUiRouter = require('angular-ui-router');
 
@@ -162,7 +166,7 @@ var _angularUiRouter2 = _interopRequireDefault(_angularUiRouter);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_angular2.default.module('angular-aircraft', [_angularUiRouter2.default]).config(['$stateProvider', function ($stateProvider) {
+_angular2.default.module('my-app', [_angularMaterialize2.default, _angularUiRouter2.default]).config(['$stateProvider', function ($stateProvider) {
   $stateProvider.state('home', {
     url: '',
     templateUrl: 'views/home.html'
