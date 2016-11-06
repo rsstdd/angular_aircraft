@@ -1,7 +1,21 @@
-<main class="">
+<main ng-controller="collection" class="">
 
     <div class="row">
       <div class="col s12">
+        <div class="input-group search-bar">
+          <input type="text"
+                 ng-model="search"
+                 ng-model-options="{ debounce: 800 }"
+                 placeholder="Enter full movie name" />
+        </div>
+
+        <div id="main-info"
+             ng-include="'partials/main-info.html'">
+        </div>
+
+        <div id="related-results"
+             ng-include="'partials/related-results.html'">
+        </div>
         <ul id="images" class="collection">
         </ul>
       </div>
