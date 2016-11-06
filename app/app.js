@@ -13,5 +13,9 @@ angular.module('my-app', [angularMaterialize, uiRouter])
     .state('main', {
       url: '/',
       templateUrl: 'views/home.html'
-    });
+    })
+    .state('collection', {
+      url: '/collection',
+      templateUrl: 'views/collection.html'
+    })
 }]);

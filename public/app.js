@@ -173,6 +173,9 @@ _angular2.default.module('my-app', [_angularMaterialize2.default, _angularUiRout
   }).state('main', {
     url: '/',
     templateUrl: 'views/home.html'
+  }).state('collection', {
+    url: '/collection',
+    templateUrl: 'views/collection.html'
   });
 }]);
 });

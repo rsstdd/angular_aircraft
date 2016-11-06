@@ -1,6 +1,15 @@
 /** {
   background-color: #F2F2F2;
 }*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
 
 /*Hgroup*/
 h1, h2, h3, h4, p {
@@ -70,11 +79,39 @@ margin-top: 129px;
   margin-top: 20px;
   margin-left: 5%;
   font-family: serif;
+  background-color: rgba(110, 122, 84, .2);
 }
 .shadow {
   -moz-box-shadow:    inset 0 0 20px #000000;
   -webkit-box-shadow: inset 0 0 20px #000000;
   box-shadow:         inset 0 0 20px #000000;
+}
+
+@media only screen and (max-width : 1076px) {
+  logo-png {
+      margin-bottom: 300px;
+    }
+}
+@media only screen and (max-width : 1076px) {
+  logo-png {
+      margin-bottom: 700px;
+    }
+}
+@media only screen and (max-width : 992px) {
+  logo-png {
+    margin-bottom: absolute;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  logo-png {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width : 476px) {
+  margin-bottom {
+      height: 1420px;
+    }
 }
 
 /*# sourceMappingURL=app.css.map*/
